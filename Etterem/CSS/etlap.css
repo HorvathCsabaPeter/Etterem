@@ -1,0 +1,65 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     background-color:#d4af37; color: #2c1e14; padding-top: 80px; scroll-behavior: smooth; }
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+
+
+.logo { color: #d4af37; font-size: 24px; font-weight: bold; letter-spacing: 3px; }
+
+nav {
+    position: fixed;
+    top: 0; width: 100%;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 50px;
+    background: rgba(44, 30, 20, 0.95); /* Áttetsző sötétbarna */
+    z-index: 1000;
+    border-bottom: 2px solid #d4af37;
+}
+
+.logo { color: #d4af37; font-size: 24px; font-weight: bold; letter-spacing: 3px; }
+
+.nav-links { display: flex; list-style: none; gap: 30px; }
+.nav-links a { color: #fdf5e6; text-decoration: none; font-size: 20px; transition: 0.3s; }
+.nav-links a:hover { color: #d4af37; }
+
+img{
+    border: 5px solid;
+    height: 200px;
+    margin-top: 70px;
+}
+p,h1{
+    font-size: 38px;
+    margin-left: 50px;
+}
+.menu-item:hover{
+    transform: scale(1.30);
+    transition: 0.5s;
+    color: #f1eee8;
+     cursor: pointer;
+    
+    
+}
+.menu-item{
+    
+}
+.additional-items:hover{
+    transform: scale(1.20);
+    transition: 0.5s;
+    color: #f1eee8;
+    cursor: ns-resize;
+    
+}
+.additional-items {
+    
+    transition: 0.5s;
+}
+.ételekt{
+    
+    font-size: 38px;
+}
