@@ -46,3 +46,28 @@ p,h1{
 .kollega{
     text-align: center;
 }
+.kepek{
+    height: 400px;
+    width: 300px;
+    
+    
+    text-align: center; 
+}
+.munkatarsak-kontener {
+    display: flex;            
+    justify-content: center;  
+    gap: 20px;               
+    flex-wrap: wrap;          
+    background-color: #d4ac2b; 
+    padding: 20px;
+}
+
+.munkatars {
+    text-align: center;       
+}
+
+.munkatars img {
+    height: 400px;
+    width: 300px;             
+    border: 2px solid black;  
+}
