@@ -63,11 +63,19 @@ p,h1{
 }
 
 .munkatars {
-    text-align: center;       
+    text-align: center;  
+        
+}
+.munkatars p {
+    font-size: 39px;
+    border-top: 10px;
+    text-align: center;
+    font-size: 26px;
+    width: 500px;
 }
 
 .munkatars img {
-    height: 400px;
-    width: 303px;             
+    height: 370px;
+    width: 400px;             
     border: 2px solid black;  
 }
