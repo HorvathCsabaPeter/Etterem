@@ -1,81 +1,116 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     background-color:#d4af37; color: #2c1e14; padding-top: 80px; scroll-behavior: smooth; }
+/* --- ALAPOK ÉS RESET --- */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
 
-html{
+html {
     scroll-behavior: smooth;
     height: 100%;
 }
 
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #d4af37; 
+    color: #2c1e14; 
+    padding-top: 100px; /* Megemeltem, hogy ne takarja ki a menü a tetejét */
+}
 
-
-.logo { color: #d4af37; font-size: 24px; font-weight: bold; letter-spacing: 3px; }
-
+/* --- NAVIGÁCIÓ (MENÜ) --- */
 nav {
     position: fixed;
-    top: 0; width: 100%;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 20px 50px;
-    background: rgba(44, 30, 20, 0.95); /* Áttetsző sötétbarna */
-    z-index: 1000;
+    top: 0; 
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(44, 30, 20, 0.98); /* Sötétebb, hogy jobban látszódjon */
+    z-index: 9999; /* Nagyon magas érték, hogy semmi ne takarja le */
     border-bottom: 2px solid #d4af37;
 }
 
-.logo { color: #d4af37; font-size: 24px; font-weight: bold; letter-spacing: 3px; }
-
-.nav-links { display: flex; list-style: none; gap: 30px; }
-.nav-links a { color: #fdf5e6; text-decoration: none; font-size: 20px; transition: 0.3s; }
-.nav-links a:hover { color: #d4af37; }
-
-img{
-    border: 5px solid;
-    height: 200px;
-    margin-top: 70px;
+.logo { 
+    color: #d4af37; 
+    font-size: 28px; 
+    font-weight: bold; 
+    letter-spacing: 3px; 
 }
-p,h1{
-    font-size: 38px;
+
+.nav-links { 
+    display: flex; 
+    list-style: none; 
+    gap: 40px; /* Nagyobb távolság a gombok között */
+}
+
+/* ITT A JAVÍTÁS: Nagyobb betű és biztos kattinthatóság */
+.nav-links a { 
+    color: #fdf5e6; 
+    text-decoration: none; 
+    font-size: 26px; /* Megemeltem 20-ról 26-ra */
+    font-weight: bold;
+    transition: 0.3s; 
+    display: block; 
+    padding: 5px 10px;
+}
+
+.nav-links a:hover { 
+    color: #d4af37; 
+    transform: scale(1.1); /* Kicsit megnő, ha rámutatsz */
+}
+
+/* --- TARTALOM ELEMEK --- */
+
+/* Fontos: Ne adj minden p-nek 38px-et, mert a menüben is elronthatja! 
+   Inkább csak a címsorokat és a fő szövegeket célozd. */
+h1 {
+    font-size: 45px;
     margin-left: 50px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.terkep{
-    text-align: center;
-    
-   
+/* Csak a sima leíró szövegek */
+.leiras {
+    font-size: 30px;
+    margin-left: 50px;
+    line-height: 1.4;
 }
-.kollega{
-    text-align: center;
-}
-.kepek{
-    height: 400px;
-    width: 300px;
-    
-    
-    text-align: center; 
-}
+
+/* --- MUNKATÁRSAK SZEKCIÓ --- */
 .munkatarsak-kontener {
-    display: flex;            
-    justify-content: center;  
-    gap: 20px;               
-    flex-wrap: wrap;          
+    display: flex;             
+    justify-content: center;   
+    gap: 30px;                
+    flex-wrap: wrap;           
     background-color: #d4ac2b; 
-    padding: 20px;
+    padding: 50px 20px;
+    margin-top: 50px;
 }
 
 .munkatars {
-    text-align: center;  
-        
-}
-.munkatars p {
-    font-size: 39px;
-    border-top: 10px;
-    text-align: center;
-    font-size: 26px;
-    width: 500px;
+    text-align: center;   
+    width: 400px; /* Fix szélesség a kártyáknak */
 }
 
 .munkatars img {
     height: 370px;
-    width: 400px;             
-    border: 2px solid black;  
+    width: 100%; /* Kitölti a 400px-es tárolót */
+    object-fit: cover; /* Nem torzul el a kép */
+    border: 4px solid #2c1e14;   
+    margin-top: 0; /* Kivettem a 70px-et, mert itt nem kell */
+}
+
+.munkatars p {
+    font-size: 26px;
+    margin-left: 0; /* Középre igazításhoz nem kell a margin-left */
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* --- TÉRKÉP --- */
+.terkep {
+    text-align: center;
+    padding: 50px 0;
 }

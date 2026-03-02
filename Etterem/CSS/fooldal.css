@@ -2,21 +2,11 @@
 body { font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color: #fdf5e6; color: #2c1e14; }
 
 
-nav {
-    position: fixed;
-    top: 0; width: 100%;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 20px 50px;
-    background: rgba(44, 30, 20, 0.95); /* Áttetsző sötétbarna */
-    z-index: 1000;
-    border-bottom: 2px solid #d4af37;
+
+.nav-links a:hover { 
+    color: #d4af37; 
+    transform: scale(1.1); /* Kicsit megnő, ha rámutatsz */
 }
-
-.logo { color: #d4af37; font-size: 24px; font-weight: bold; letter-spacing: 3px; }
-
-.nav-links { display: flex; list-style: none; gap: 30px; }
-.nav-links a { color: #fdf5e6; text-decoration: none; font-size: 20px; transition: 0.3s; }
-.nav-links a:hover { color: #d4af37; }
 
 
 .hero {
