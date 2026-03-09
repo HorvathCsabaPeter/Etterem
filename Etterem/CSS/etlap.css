@@ -10,22 +10,43 @@ html{
 
 
 
-.logo { color: #d4af37; font-size: 24px; font-weight: bold; letter-spacing: 3px; }
-
 nav {
     position: fixed;
-    top: 0; width: 100%;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 20px 50px;
-    background: rgba(44, 30, 20, 0.95); /* Áttetsző sötétbarna */
-    z-index: 1000;
+    top: 0; 
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(44, 30, 20, 0.98); /* Sötétebb, hogy jobban látszódjon */
+    z-index: 9999; /* Nagyon magas érték, hogy semmi ne takarja le */
     border-bottom: 2px solid #d4af37;
 }
 
-.logo { color: #d4af37; font-size: 24px; font-weight: bold; letter-spacing: 3px; }
+.logo { 
+    color: #d4af37; 
+    font-size: 28px; 
+    font-weight: bold; 
+    letter-spacing: 3px; 
+}
 
-.nav-links { display: flex; list-style: none; gap: 30px; }
-.nav-links a { color: #fdf5e6; text-decoration: none; font-size: 20px; transition: 0.3s; }
+.nav-links { 
+    display: flex; 
+    list-style: none; 
+    gap: 40px; /* Nagyobb távolság a gombok között */
+}
+
+/* ITT A JAVÍTÁS: Nagyobb betű és biztos kattinthatóság */
+.nav-links a { 
+    color: #fdf5e6; 
+    text-decoration: none; 
+    font-size: 26px; /* Megemeltem 20-ról 26-ra */
+    font-weight: bold;
+    transition: 0.3s; 
+    display: block; 
+    padding: 5px 10px;
+}
+
 .nav-links a:hover { 
     color: #d4af37; 
     transform: scale(1.1); /* Kicsit megnő, ha rámutatsz */

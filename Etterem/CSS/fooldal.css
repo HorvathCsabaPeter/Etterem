@@ -59,7 +59,17 @@ nav {
     color: #d4af37; 
     transform: scale(1.1); /* Kicsit megnő, ha rámutatsz */
 }
-
+.tortenet{
+    margin-left: 590px;
+    line-height: 40px;
+    margin-right: 0;
+    display: flex;
+    width: 700px;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+   border: 5px solid black;
+}
 /* --- TARTALOM ELEMEK --- */
 
 /* Fontos: Ne adj minden p-nek 38px-et, mert a menüben is elronthatja! 
